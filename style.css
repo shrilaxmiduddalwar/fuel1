@@ -784,21 +784,38 @@ footer p {
   }
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .contact-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.contact-card i {
-  font-size: 2.5rem;
-  color: #444;
-  margin-bottom: 1rem;
-  transition: color 0.3s, transform 0.3s;
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
-.contact-card:hover i {
-  color: #00796b;
-  transform: scale(1.2);
+.video-container video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  object-fit: contain;
+  max-height: 100%;
+}
+
+/* Extra safety for mobile devices */
+@media (max-width: 768px) {
+  .video-container {
+    padding: 0.5rem;
+  }
+
+  .video-container video {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-container video {
+    max-height: 200px;
+  }
 }

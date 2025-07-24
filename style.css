@@ -10,6 +10,20 @@ body {
   color: #333;
   text-align: center;
 }
+.video-container {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: none; /* REMOVE any fixed height */
+  object-fit: unset; /* REMOVE any object-fit: contain or cover */
+}
 
 /* Header & Logo */
 header {

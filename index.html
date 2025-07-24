@@ -37,20 +37,18 @@
   <div class="video-overlay-text">
   
   </div>
-
 <video
   id="myVideo"
   controls
   playsinline
   webkit-playsinline
-  muted
-  preload="metadata"
   poster="thumbnail.jpg"
-  style="width: 100%; height: auto; display: block; border-radius: 10px;"
+  onclick="this.requestFullscreen && this.requestFullscreen()"
 >
   <source src="app.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
+
 
 
 

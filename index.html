@@ -38,7 +38,16 @@
   
   </div>
 
-<video id="myVideo" controls playsinline webkit-playsinline poster="thumbnail.jpg">
+<video
+  id="myVideo"
+  controls
+  playsinline
+  webkit-playsinline
+  muted
+  preload="metadata"
+  poster="thumbnail.jpg"
+  style="width: 100%; height: auto; display: block; border-radius: 10px;"
+>
   <source src="app.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>

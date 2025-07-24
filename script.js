@@ -49,3 +49,15 @@ function showSection(id, el) {
 function closeAlert() {
   document.getElementById('appAlert').style.display = 'none';
 }
+
+  function openFullscreen(video) {
+    if (video.requestFullscreen) {
+      video.requestFullscreen();
+    } else if (video.webkitRequestFullscreen) {
+      video.webkitRequestFullscreen(); // Safari
+    } else if (video.msRequestFullscreen) {
+      video.msRequestFullscreen(); // IE/Edge
+    }
+  }
+
+

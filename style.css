@@ -16,6 +16,21 @@ body {
   margin: 0 auto;
   padding: 1rem;
 }
+.video-container {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
 
 .video-container video {
   width: 100%;
